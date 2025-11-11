@@ -60,7 +60,7 @@ YOGA-MUDRA/
 
 ▶️ How to Run
 
-1. Activate your virtual environment
+1. ***Activate your virtual environment***
 
 ```bash
 .\venv\Scripts\activate
