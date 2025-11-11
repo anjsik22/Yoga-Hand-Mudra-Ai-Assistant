@@ -58,12 +58,12 @@ YOGA-MUDRA/
 └── requirements.txt                 # Dependencies list
 
 
-##▶️ How to Run
+## ▶️ How to Run
 
 1. **Activate your virtual environment**
 
-```bash
-.\venv\Scripts\activate
+   ```bash
+   .\venv\Scripts\activate
 
 
 2. Run the live capture script to start collecting mudra data:
