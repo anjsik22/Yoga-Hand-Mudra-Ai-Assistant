@@ -88,10 +88,3 @@ python src/capture/capture_live_assistant.py
 
 Developed as part of an AI-driven Yoga Hand Mudra Assistant Project,
 combining computer vision, deep learning, and wellness innovation.
-
-✅ Why this version is better:
-
-✔️ Clean headings and emoji icons
-✔️ Proper code block indentation
-✔️ Works beautifully on GitHub’s markdown renderer
-✔️ Readable section spacing and professional layout
