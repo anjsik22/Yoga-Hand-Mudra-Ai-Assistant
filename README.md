@@ -13,47 +13,50 @@ This project detects, analyzes, and corrects **Yoga Hand Mudras** in real time u
 - OpenCV, MediaPipe, TensorFlow, NumPy, Pandas
 - VS Code for development
 
-## 📁 Folder Structure
+## 📁 Project Structure
+
+```text
 YOGA-MUDRA/
 │
-├── checkpoints/ → Trained model weights
-│ ├── feedback_model.pth
-│ └── mudra_model_best.pth
+├── checkpoints/                     # Trained model weights
+│   ├── feedback_model.pth
+│   └── mudra_model_best.pth
 │
-├── data/ → Dataset and processed files
-│ ├── images/ → Raw and captured hand mudra images
-│ ├── images_augmented/ → Augmented (generated) images
-│ ├── landmarks/ → Landmark data extracted via MediaPipe
-│ │ └── landmarks_clean.csv → Cleaned landmark dataset
-│ └── preprocessed/ → Normalized and encoded training data
-│ ├── X.npy
-│ ├── y.npy
-│ ├── label_mapping.json
-│ └── scaler.save
+├── data/                            # Dataset and processed files
+│   ├── images/                      # Captured + downloaded yoga hand mudra images
+│   ├── images_augmented/            # Augmented (AI-generated) images
+│   ├── landmarks/                   # Landmark data extracted using MediaPipe
+│   │   └── landmarks_clean.csv
+│   └── preprocessed/                # Normalized and encoded training data
+│       ├── X.npy
+│       ├── y.npy
+│       ├── label_mapping.json
+│       └── scaler.save
 │
-├── src/ → Source code modules
-│ ├── capture/ → Real-time webcam & prediction scripts
-│ │ ├── capture_live.py → Capture and label mudras manually
-│ │ ├── capture_live_predict.py → Live mudra prediction (model inference)
-│ │ └── capture_live_assistant.py → AI-based mudra detection + feedback (audio + visual)
-│ │
-│ ├── models/ → Model training and architecture scripts
-│ │ ├── train.py → Train mudra classification model
-│ │ └── train_feedback_models.py → Train feedback correction/assistant model
-│ │
-│ ├── preprocessing/ → Data preparation and cleaning scripts
-│ │ ├── augment_and_generate_landmarks.py → Data augmentation + landmark generation
-│ │ ├── clean_landmarks.py → Clean raw landmark CSVs
-│ │ ├── generate_landmarks_csv.py → Generate landmark dataset from images
-│ │ └── normalize.py → Normalize + encode dataset for training
-│ │
-│ └── utils/ → (Optional) helper scripts / utilities
+├── src/                             # Source code modules
+│   ├── capture/                     # Capture and prediction scripts
+│   │   ├── capture_live.py          # Capture and label mudras manually
+│   │   ├── capture_live_predict.py  # Real-time mudra prediction (model inference)
+│   │   └── capture_live_assistant.py# AI-based mudra assistant with feedback (audio + visual)
+│   │
+│   ├── models/                      # Model training and architecture scripts
+│   │   ├── train.py                 # Train mudra classification model
+│   │   └── train_feedback_models.py # Train feedback correction model
+│   │
+│   ├── preprocessing/               # Data preparation and cleaning scripts
+│   │   ├── augment_and_generate_landmarks.py  # Data augmentation + landmark generation
+│   │   ├── clean_landmarks.py                # Clean raw landmark CSVs
+│   │   ├── generate_landmarks_csv.py         # Generate landmark dataset from images
+│   │   └── normalize.py                      # Normalize and encode dataset for training
+│   │
+│   └── utils/                       # (Optional) helper utilities
 │
-├── venv/ → Virtual environment (ignored in Git)
+├── venv/                            # Virtual environment (ignored in Git)
 │
-├── .gitignore → Ignored files/folders list
-├── README.md → Project documentation
-└── requirements.txt → Dependencies list
+├── .gitignore                       # Ignored files/folders list
+├── README.md                        # Project documentation
+└── requirements.txt                 # Dependencies list
+
 
 ### How to Run
 1. Activate your virtual environment  
