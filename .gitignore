@@ -1,0 +1,12 @@
+venv/
+.venv/
+
+# Ignore dataset and model files
+data/images/
+data/images_augmented/
+
+# Ignore temporary and system files
+__pycache__/
+*.pyc
+.DS_Store
+.env
