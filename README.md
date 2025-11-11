@@ -62,7 +62,8 @@ YOGA-MUDRA/
 
 1. Activate your virtual environment
 
-<pre> ```bash .\venv\Scripts\activate``` </pre>
+```bash
+.\venv\Scripts\activate
 
 
 2. Run the live capture script to start collecting mudra data:
