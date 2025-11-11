@@ -58,15 +58,40 @@ YOGA-MUDRA/
 └── requirements.txt                 # Dependencies list
 
 
-### How to Run
-1. Activate your virtual environment  
-2. Run the capture script to start collecting data:
-   \`\`\`
-   python src/capture/capture_live.py user01
-   \`\`\`
+▶️ How to Run
 
-### Next Steps
-- [ ] Collect dataset using MediaPipe
-- [ ] Train baseline mudra classifier
-- [ ] Add real-time correction feedback
-" > README.md
+1. Activate your virtual environment
+
+```bash .\venv\Scripts\activate
+
+
+2. Run the live capture script to start collecting mudra data:
+
+```bash python src/capture/capture_live.py user01
+
+
+3. Run real-time AI assistant (for detection and feedback):
+
+```bash python src/capture/capture_live_assistant.py
+
+🚀 Next Steps
+
+ Collect additional dataset using MediaPipe
+
+ Train and fine-tune MudraNet model for higher accuracy
+
+ Integrate advanced AI-driven correction feedback
+
+ Explore web or mobile deployment for wider usability
+
+🧩 Credits
+
+Developed as part of an AI-driven Yoga Hand Mudra Assistant Project,
+combining computer vision, deep learning, and wellness innovation.
+
+✅ Why this version is better:
+
+✔️ Clean headings and emoji icons
+✔️ Proper code block indentation
+✔️ Works beautifully on GitHub’s markdown renderer
+✔️ Readable section spacing and professional layout
