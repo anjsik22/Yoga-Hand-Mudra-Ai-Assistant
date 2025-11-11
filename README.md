@@ -60,20 +60,19 @@ YOGA-MUDRA/
 
 ## ▶️ How to Run
 
-1. **Activate your virtual environment**
+1. Activate your virtual environment
 
-   ```bash
-   .\venv\Scripts\activate
+.\venv\Scripts\activate
 
 
 2. Run the live capture script to start collecting mudra data:
 
-<pre> ```bash python src/capture/capture_live.py user01``` </pre>
+python src/capture/capture_live.py user01
 
 
 3. Run real-time AI assistant (for detection and feedback):
 
-<pre> ```bash python src/capture/capture_live_assistant.py``` </pre>
+python src/capture/capture_live_assistant.py
 
 🚀 Next Steps
 
