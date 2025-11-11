@@ -58,7 +58,7 @@ YOGA-MUDRA/
 └── requirements.txt                 # Dependencies list
 
 
-▶️ How to Run
+##▶️ How to Run
 
 1. **Activate your virtual environment**
 
